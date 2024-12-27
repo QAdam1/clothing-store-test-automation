@@ -1,0 +1,23 @@
+{
+  "name": "clothing-store-test-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QAdam1/clothing-store-test-automation.git"
+  },
+  "author": "QAdam1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QAdam1/clothing-store-test-automation/issues"
+  },
+  "homepage": "https://github.com/QAdam1/clothing-store-test-automation#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  }
+}
