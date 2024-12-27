@@ -8,7 +8,7 @@ export class LoginPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.input_Email = page.getByPlaceholder('Email Address');
+        this.input_Email = page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
         this.input_Password = page.getByPlaceholder('Password');
         this.btn_Login = page.getByRole('button', { name: 'Login' });
     }
@@ -25,7 +25,7 @@ export class LoginPage extends BasePage {
         await this.btn_Login.click();
     }
 
-    async loginAs(email: string, password: string) {
+    async login(email: string, password: string) {
         await this.fillEmail(email);
         await this.fillPassword(password);
         await this.clickLogin();
