@@ -2,9 +2,9 @@ import { Locator, Page } from '@playwright/test';
 import { BasePage } from './base/BasePage';
 
 export class LoginPage extends BasePage {
-    readonly input_Email: Locator;
-    readonly input_Password: Locator;
-    readonly btn_Login: Locator;
+    private readonly input_Email: Locator;
+    private readonly input_Password: Locator;
+    private readonly btn_Login: Locator;
 
     constructor(page: Page) {
         super(page);

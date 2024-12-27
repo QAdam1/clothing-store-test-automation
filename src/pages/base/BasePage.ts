@@ -2,11 +2,11 @@ import { Locator, Page } from '@playwright/test';
 import { PageObject } from './PageObject';
 
 export class BasePage extends PageObject {
-    readonly btn_Home: Locator;
-    readonly btn_Products: Locator;
-    readonly btn_Cart: Locator;
-    readonly btn_LoginAndSignUp: Locator;
-    readonly btn_Logout: Locator;
+    private readonly btn_Home: Locator;
+    private readonly btn_Products: Locator;
+    private readonly btn_Cart: Locator;
+    private readonly btn_LoginAndSignUp: Locator;
+    private readonly btn_Logout: Locator;
 
     constructor(page: Page) {
         super(page);
