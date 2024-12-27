@@ -21,7 +21,7 @@ _password:_ user <br>
 | **Num** | **Description**                                                     | **Covered** |
 | ------- | ------------------------------------------------------------------- | ----------- |
 | 1       | <s> Register User                                                   | -           |
-| 2       | Login User with correct email and password                          | No          |
+| 2       | Login User with correct email and password                          | ✅          |
 | 3       | Login User with incorrect email and password                        | No          |
 | 4       | Logout User                                                         | No          |
 | 5       | <s> Register User with existing email                               | -           |

@@ -1,5 +1,5 @@
-import { Locator, Page } from "@playwright/test";
-import { PageObject } from "./PageObject";
+import { Locator, Page } from '@playwright/test';
+import { PageObject } from './PageObject';
 
 export class BasePage extends PageObject {
     readonly btn_Home: Locator;

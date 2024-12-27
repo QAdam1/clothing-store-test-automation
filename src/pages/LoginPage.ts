@@ -1,5 +1,5 @@
-import { Locator, Page } from "@playwright/test";
-import { BasePage } from "./foundation/BasePage";
+import { Locator, Page } from '@playwright/test';
+import { BasePage } from './base/BasePage';
 
 export class LoginPage extends BasePage {
     readonly input_Email: Locator;
@@ -8,9 +8,9 @@ export class LoginPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.input_Email = page.getByPlaceholder("Email Address");
-        this.input_Password = page.getByPlaceholder("Password");
-        this.btn_Login = page.getByRole("button", { name: "Login" });
+        this.input_Email = page.getByPlaceholder('Email Address');
+        this.input_Password = page.getByPlaceholder('Password');
+        this.btn_Login = page.getByRole('button', { name: 'Login' });
     }
 
     async fillEmail(email: string) {
