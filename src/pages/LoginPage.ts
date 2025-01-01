@@ -17,11 +17,11 @@ export class LoginPage extends BasePage {
 		await this.page.goto('https://www.automationexercise.com/login');
 	}
 	
-	async fillEmail(email: string) {
+	async enterEmail(email: string) {
 		await this.input_Email.fill(email);
 	}
 	
-	async fillPassword(password: string) {
+	async enterPassword(password: string) {
 		await this.input_Password.fill(password);
 	}
 	
@@ -30,8 +30,8 @@ export class LoginPage extends BasePage {
 	}
 	
 	async login(email: string, password: string) {
-		await this.fillEmail(email);
-		await this.fillPassword(password);
+		await this.enterEmail(email);
+		await this.enterPassword(password);
 		await this.clickLogin();
 	}
 }

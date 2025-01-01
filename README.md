@@ -23,7 +23,7 @@ _password:_ user <br>
 | 1       | <s> Register User                                                   | -           |
 | 2       | Login User with correct email and password                          | ✅          |
 | 3       | Login User with incorrect email and password                        | No          |
-| 4       | Logout User                                                         | No          |
+| 4       | Logout User                                                         | ✅          |
 | 5       | <s> Register User with existing email                               | -           |
 | 6       | <s> Contact Us Form                                                 | -           |
 | 7       | <s> Verify Test Cases Page                                          | -           |

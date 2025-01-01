@@ -17,23 +17,23 @@ export class BasePage extends PageObject {
         this.btn_Logout = page.getByRole('link', { name: 'Logout' });
     }
 
-    async goToHome() {
+    async clickGoToHome() {
         await this.btn_Home.click();
     }
 
-    async goToProducts() {
+    async clickGoToProducts() {
         await this.btn_Products.click();
     }
 
-    async goToCart() {
+    async clickGoToCart() {
         await this.btn_Cart.click();
     }
 
-    async goToLoginAndSignUp() {
+    async clickGoToLoginAndSignUp() {
         await this.btn_LoginAndSignUp.click();
     }
 
-    async goToLogout() {
+    async clickLogout() {
         await this.btn_Logout.click();
     }
 }
